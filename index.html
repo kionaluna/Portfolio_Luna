@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Card with Projects</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100 flex flex-col items-center justify-start min-h-screen py-4 sm:py-6 md:py-8 lg:py-10">
+    <!-- First Card (Profile) -->
+    <div class="bg-white shadow-lg rounded-lg flex flex-col sm:flex-row w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl mb-6 sm:mb-8 md:mb-10">
+        <!-- Left Section -->
+        <div class="w-full sm:w-1/2 p-4 sm:p-5 md:p-6 border-b sm:border-b-0 sm:border-r">
+            <h1 class="text-xl sm:text-2xl font-bold mb-2">Kiona Maree Luna</h1>
+            <p class="text-gray-600 mb-2 text-sm sm:text-base">October 21, 2005</p>
+            <p class="text-gray-600 mb-4 flex items-center text-sm sm:text-base">
+                <span class="mr-2">📞</span> 09338205333
+            </p>
+            <div class="space-y-2">
+                <p><span class="font-semibold text-base sm:text-lg">Education</span></p>
+                <p class="text-sm sm:text-base">
+                    <span class="font-semibold">University</span> <br>
+                    Ateneo de Davao University <br>
+                    Bachelor of Science in Information Technology<br>
+                    2023-2027
+                </p>
+                <p class="text-sm sm:text-base">
+                    <span class="font-semibold">Senior High School</span> <br>
+                    Ateneo de Davao University Senior High School<br>
+                    Science, Technology, Engineering, and Mathematics<br>
+                    2021-2023
+                </p>
+                <br>
+                <p><span class="font-semibold text-base sm:text-lg">Skills</span></p>
+                <ul class="list-disc pl-5 space-y-1 text-sm sm:text-base">
+                    <li>Fast Learner</li>
+                    <li>Hardworking</li>
+                    <li>Creative</li>
+                    <li>Problem Solving</li>
+                    <li>Meticulous</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div class="w-full sm:w-1/2 relative h-64 sm:h-auto">
+            <img src="2.jpeg" alt="Profile Image" class="w-full h-full object-cover">
+            <div class="absolute bottom-2 sm:bottom-4 right-2 sm:right-4 text-stone-500 text-sm sm:text-lg font-semibold">
+                PORTFOLIO
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Card (Projects) -->
+    <div class="bg-white shadow-lg rounded-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl p-4 sm:p-5 md:p-6">
+        <h2 class="text-xl sm:text-2xl font-bold mb-4">Projects</h2>
+        <div class="space-y-4 sm:space-y-6">
+            <!-- Project 1 -->
+            <div class="flex flex-col sm:flex-row items-start">
+                <img src="Plantcare.png" alt="Project 1 Image" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-2 sm:mb-0 sm:mr-4">
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold">Plant Tracker and Care System</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Developed a Plant Tracker and Care System to monitor plant health, schedule watering, and provide care tips using Java.</p>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="flex flex-col sm:flex-row items-start">
+                <img src="customerorder.png" alt="Project 2 Image" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-2 sm:mb-0 sm:mr-4">
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold">Customer and Product Ordering System</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Built a Customer and Product Ordering System for order management and customer tracking using Java.</p>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="flex flex-col sm:flex-row items-start">
+                <img src="StudentInfo.png" alt="Project 3 Image" class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-2 sm:mb-0 sm:mr-4">
+                <div>
+                    <h3 class="text-base sm:text-lg font-semibold">Student Information Form</h3>
+                    <p class="text-gray-600 text-sm sm:text-base">Created a Student Information Form using HTML and CSS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
